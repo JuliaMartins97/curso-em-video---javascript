@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+    body{
+        background-color: purple;
+        color: white;
+        font: normal 18pt Arial;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    Você é brasileiro? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Responder" onclick="verificar()">
+    <div id= "res">
+
+    </div>
+
+    <script>
+
+       
+
+        function verificar(){
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txtp.value)
+            if (pais == 'Sim'){
+                res.innerHTML = "<p>Parabéns, você é um <strong>LUTADOR</strong></p>"
+            }else{
+                res.innerHTML = "<p>Você é <strong>ESTRANGEIRO</strong></p>"
+            }
+
+            res.innerHTML += "Somos todos humanos!"
+
+        }
+
+    </script>
+</body>
+</html>
