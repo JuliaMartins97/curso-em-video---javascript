@@ -1,5 +1,5 @@
 body {
-    background: rgb(41, 101, 190);
+    background: rgb(190, 41, 41);
     font: normal 15pt Arial;
 }
 
@@ -16,6 +16,7 @@ padding: 15px;
 width: 500px;
 margin:auto;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
+text-align: center  ;
 }
 
 footer {
